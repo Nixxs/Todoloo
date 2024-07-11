@@ -3,8 +3,8 @@ import Greet from "./components/Greet";
 import Person from "./components/Person"
 import PersonList from "./components/PersonList"
 import Status from "./components/Status"
-import Appbutton from "./components/AppButton"
-import AppButton from "./components/AppButton";
+import AppButton from "./components/AppButton"
+import AppInput from "./components/AppInput";
 
 function App() {
 	const names = [
@@ -54,11 +54,14 @@ function App() {
 				</Status>
 			</div>
 			<div className="card">
-				<h3>A button</h3>
+				<h3>Input and click events</h3>
 				<AppButton 
 					handleClick = {(event) => {
 						alert("button clicked: " + event.type);
 					}}
+				/>
+				<AppInput 
+					value=""
 				/>
 			</div>
 		</>

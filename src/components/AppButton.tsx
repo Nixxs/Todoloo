@@ -1,4 +1,4 @@
-import { FC}  from "react";
+import { FC }  from "react";
 import { Button } from "@mui/material";
 
 type ButtonProps = {
@@ -13,6 +13,7 @@ const AppButton: FC<ButtonProps> = ({handleClick}) => {
 		>
 			click me
 		</Button>
+
 	);
 }
 

@@ -11,7 +11,9 @@ const PersonList = (props: PersonListProps) => {
 			{props.names.map(
 				(name) => {
 					return (
-						<li>
+						<li
+							key={name.first}
+						>
 							{name.first} {name.last}
 						</li>
 					);
