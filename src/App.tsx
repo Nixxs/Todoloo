@@ -60,8 +60,9 @@ function App() {
 						alert("button clicked: " + event.type);
 					}}
 				/>
+				<br />
 				<AppInput 
-					value=""
+					initialValue=""
 				/>
 			</div>
 		</>

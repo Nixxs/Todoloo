@@ -2,11 +2,11 @@ import {FC, useState} from "react";
 import { TextField } from "@mui/material";
 
 type AppInputProps = {
-	value: string
+	initialValue: string
 }
 
-const AppInput: FC<AppInputProps> = ({value}) => {
-	const [outputValue, setOutputValue] = useState(value);
+const AppInput: FC<AppInputProps> = ({initialValue}) => {
+	const [outputValue, setOutputValue] = useState<string>(initialValue);
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setOutputValue(event.target.value);
@@ -17,6 +17,9 @@ const AppInput: FC<AppInputProps> = ({value}) => {
 			<TextField 
 				value={outputValue}
 				onChange={handleInputChange}
+				sx={{
+					mt: 2
+				}}
 			/>
 			<p>{outputValue}</p>
 		</>
