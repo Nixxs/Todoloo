@@ -18,6 +18,14 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.card {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #c4c4c4;
+  background-color: rgb(54, 54, 54);
+  margin-top: 10px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
