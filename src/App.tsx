@@ -1,11 +1,16 @@
 import "./App.css";
-import Greet from "./components/Greet";
+import { Box, Typography } from "@mui/material";
 
 function App() {
 	return (
-		<div className="App">
-			<Greet name="Nick"/>
-		</div>
+		<Box className="card">
+			<Typography
+				variant="body1"
+				className="basicText"
+			>
+				test
+			</Typography>
+		</Box>
 	);
 }
 
