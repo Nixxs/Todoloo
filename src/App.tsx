@@ -2,6 +2,7 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Person from "./components/Person"
 import PersonList from "./components/PersonList"
+import Status from "./components/Status"
 
 function App() {
 	const names = [
@@ -40,6 +41,15 @@ function App() {
 				<PersonList
 					names={names}
 				/>
+			</div>
+			<div className="card">
+				<Status
+					status="loading"
+				>
+					<>
+						<p>the children</p>
+					</>
+				</Status>
 			</div>
 		</>
 	);
