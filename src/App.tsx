@@ -5,6 +5,8 @@ import PersonList from "./components/PersonList"
 import Status from "./components/Status"
 import AppButton from "./components/AppButton"
 import AppInput from "./components/AppInput";
+import Animal from "./components/SeparateTypes";
+import Animals from "./components/Animals"
 
 function App() {
 	const names = [
@@ -19,6 +21,21 @@ function App() {
 		{
 			first: "declan",
 			last: "chai"
+		}
+	]
+
+	const animals = [
+		{
+			family: "feliine",
+			species: "ragdoll",
+			name: "manny",
+			age: 9
+		},
+		{
+			family: "canine",
+			species: "Golden",
+			name: "Max",
+			age: 11
 		}
 	]
 
@@ -63,6 +80,29 @@ function App() {
 				<br />
 				<AppInput 
 					initialValue=""
+				/>
+			</div>
+			<div className="card">
+				<h3>Separating Types to different files</h3>
+				<Animal 
+					family="Canine"
+					species="Golden Retriever"
+					name= "max"
+					age = {12}
+				/>
+			</div>
+			<div className="card">
+				<h3>Separating Types to different files</h3>
+				<Animal 
+					family="Canine"
+					species="Golden Retriever"
+					name= "max"
+					age = {12}
+				/>
+			</div>
+			<div className="card">
+				<Animals
+					animals={animals}
 				/>
 			</div>
 		</>
