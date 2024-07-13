@@ -1,16 +1,12 @@
 import "./App.css";
-import { Box, Typography } from "@mui/material";
+import Header from "./components/Header"
+import MainLayout from "./layouts/MainLayout";
 
 function App() {
 	return (
-		<Box className="card">
-			<Typography
-				variant="body1"
-				className="basicText"
-			>
-				test
-			</Typography>
-		</Box>
+		<MainLayout>
+			<Header />
+		</MainLayout>
 	);
 }
 
