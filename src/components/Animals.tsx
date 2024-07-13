@@ -5,7 +5,9 @@ const Animals: FC<AnimalList> = ({animals}) => {
 	return (
 		<>
 			{animals.map((animal: AnimalProps) => (
-				<div>
+				<div
+					key={animal.name}
+				>
 					<p>Family: {animal.family}</p>
 					<p>Species: {animal.species}</p>
 					<p>Name: {animal.name}</p>

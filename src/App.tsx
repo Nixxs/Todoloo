@@ -7,6 +7,7 @@ import AppButton from "./components/AppButton"
 import AppInput from "./components/AppInput";
 import Animal from "./components/SeparateTypes";
 import Animals from "./components/Animals"
+import CheckAuth from "./components/AuthCheck";
 
 function App() {
 	const names = [
@@ -104,6 +105,11 @@ function App() {
 				<Animals
 					animals={animals}
 				/>
+			</div>
+			<div
+				className="card"
+			>
+				<CheckAuth />
 			</div>
 		</>
 	);

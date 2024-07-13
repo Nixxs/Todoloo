@@ -5,8 +5,8 @@ type AppInputProps = {
 	initialValue: string
 }
 
-const AppInput: FC<AppInputProps> = ({initialValue}) => {
-	const [outputValue, setOutputValue] = useState<string>(initialValue);
+const AppInput: FC<AppInputProps> = () => {
+	const [outputValue, setOutputValue] = useState<string>("");
 
 	const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setOutputValue(event.target.value);
