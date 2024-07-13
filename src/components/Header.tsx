@@ -5,7 +5,8 @@ const Header = () => {
 		<Typography
 			sx={{
 				fontWeight: 600,
-				fontSize: 20
+				fontSize: 20,
+				padding: 2
 			}}
 		>
 			ToDoLoo

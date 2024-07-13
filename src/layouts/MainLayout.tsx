@@ -10,7 +10,9 @@ const MainLayout:FC<MainLayoutProps> = ({children}) => {
 		<Box
 			sx={{
 				textAlign: "center",
-				padding: 4
+				padding: 4,
+				display: "flex",
+				flexDirection: "column"
 			}}
 		>
 			{children}
