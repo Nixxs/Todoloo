@@ -8,6 +8,7 @@ import AppInput from "./components/AppInput";
 import Animal from "./components/SeparateTypes";
 import Animals from "./components/Animals"
 import CheckAuth from "./components/AuthCheck";
+import Counter from "./components/Counter";
 
 function App() {
 	const names = [
@@ -109,7 +110,13 @@ function App() {
 			<div
 				className="card"
 			>
+				<h3>Handling UseState</h3>
 				<CheckAuth />
+			</div>
+			<div
+				className="card"
+			>
+				<Counter />
 			</div>
 		</>
 	);
