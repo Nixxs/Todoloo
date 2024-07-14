@@ -1,5 +1,5 @@
 import { Typography, Box, Button, TextField } from "@mui/material";
-import {useState} from "react"
+import {useState, FC} from "react"
 
 type ToDo = {
 	id: number,
@@ -10,7 +10,11 @@ type ToDos = {
 	items: ToDo[]
 }
 
-const ToDoList = () => {
+type ToDoListProps = {
+	name: string
+}
+
+const ToDoList:FC<ToDoListProps> = ({name}) => {
 	const [todos, setTodos] = useState<ToDos>({items: []});
 	const [inputText, setInputText] = useState<string>("");
 
@@ -43,6 +47,14 @@ const ToDoList = () => {
 					textAlign: "left"
 				}}
 			>
+				<Typography
+					sx={{
+						fontWeight: 600,
+						fontSize: 20
+					}}
+				>
+					{name}
+				</Typography>
 				{todos.items.map((item) => {
 					return (
 						<Typography
